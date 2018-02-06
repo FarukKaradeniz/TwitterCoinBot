@@ -32,5 +32,5 @@ while True:
     r = requests.get("https://api.coinmarketcap.com/v1/ticker/", params=params)
     tweet = createTweet(r.text)
     print(tweet)
-    time.sleep(60 * 60 * 2)  # Sleep for 2 hours
     api.update_status(tweet)
+    time.sleep(60 * 60 * 2)  # Sleep for 2 hours
